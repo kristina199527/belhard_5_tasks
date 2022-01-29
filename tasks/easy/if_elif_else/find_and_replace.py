@@ -22,6 +22,13 @@ def find_and_replace(check_str: str, search_str: str) -> tuple:
     :return: обработанные строки
     :rtype: tuple
     """
+    if search_str in check_str:
+        check_str = check_str.swapcase()
+        search_str = search_str.capitalize()
+    else:
+        check_str = check_str
+        search_str = search_str
+
     return check_str, search_str
 
 
