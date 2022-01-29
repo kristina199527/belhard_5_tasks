@@ -15,19 +15,21 @@ TypeError с сообщением "Все элементы списка долж
 def odd_sum(int_list: list) -> int:
 
     summa = 0
-    for i in int_list:
-        if isinstance(i, int):
-            summa = summa + i
+    for y in int_list:
+        if type(y) is int and y % 2 != 0:
+            summa = summa + y
         else:
-            raise TypeError(f'not int')
-
+            continue
     return summa
 
 
 if __name__ == '__main__':
     some_list = [1, 2, 3, '123']
     try:
-        isinstance(some_list,str)
+        for i in some_list:
+            if type(i) is not int:
+                raise TypeError(f' not int')
+
     except TypeError as exc:
         print(exc)
         print("Все элементы списка должны быть целыми числами")
