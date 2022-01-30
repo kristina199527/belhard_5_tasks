@@ -14,12 +14,18 @@
 odd_in_list([1, False, 2, -1, 'Hi', 4, 6, [], (), -8]) -> [2, 4, 6, -8]
 odd_in_list([2, -1, 4, True, None, 6]) -> [2, 4, 6]
 """
-some_list1 = []
 
 
 def odd_in_list(some_list: list) -> list:
+
     odd_list = []
-    # TODO Написать свой код здесь
+
+    for i in some_list:
+        if isinstance(i, (int, float)) and i is not False and i is not True and i % 2 == 0:
+            odd_list.append(i)
+        else:
+            continue
+
     return odd_list
 
 

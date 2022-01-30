@@ -3,8 +3,8 @@
 Вернуть True или False
 
 is_pow_2(1) -> True
-is_pow_2(2) -> True
 is_pow_2(16) -> True
+is_pow_2(2) -> True
 is_pow_2(256) -> True
 is_pow_2(1024) -> True
 is_pow_2(13) -> False
@@ -13,7 +13,13 @@ is_pow_2(17) -> False
 
 
 def is_pow_2(number) -> bool:
-    return None
+
+    if (number % 2 == 0 and type(number**0.5) is float) or number == 2 or number == 1:
+        result = True
+    else:
+        result = False
+
+    return result
 
 
 if __name__ == '__main__':
