@@ -17,11 +17,10 @@ def list_compose(indexes: list, values: list) -> list:
 
     result_list = []
     for i in indexes:
-        for j in values:
-            if values[i] in values:
-                result_list.insert(i, j)
-            else:
-                result_list.insert(i, 'None')
+        if abs(i) > len(values) - 1:
+            result_list.append(None)
+        else:
+            result_list.append(values[i])
 
     return result_list
 

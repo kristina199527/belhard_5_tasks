@@ -14,7 +14,6 @@
 odd_in_list([1, False, 2, -1, 'Hi', 4, 6, [], (), -8]) -> [2, 4, 6, -8]
 odd_in_list([2, -1, 4, True, None, 6]) -> [2, 4, 6]
 """
-some_list1 = []
 
 
 def odd_in_list(some_list: list) -> list:

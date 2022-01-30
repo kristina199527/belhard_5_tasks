@@ -18,9 +18,7 @@ def square_or_rectangle(side1: int, side2: int) -> int:
         result = side1 * side2
     else:
         result = (2 * side1) + (2 * side2)
-
     return result
-
 
 
 if __name__ == '__main__':

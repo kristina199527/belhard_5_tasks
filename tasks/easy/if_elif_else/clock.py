@@ -57,8 +57,6 @@ def get_seconds(h: int, m: int, s: int) -> Union[int, str]:
     return result
 
 
-
-
 if __name__ == '__main__':
     h_val = int(input('Введите количество часов h: '))
     m_val = int(input('Введите количество минут m: '))

@@ -28,7 +28,7 @@ def processing_f(str_with_f: str) -> Union[int, str]:
     :rtype: str
     """
     if str_with_f.count('f') + str_with_f.count('F') == 0:
-        result =  str_with_f.swapcase()
+        result = str_with_f.swapcase()
     elif str_with_f.count('f') + str_with_f.count('F') == 1:
         result = str_with_f.lower()
         result = str_with_f.find('f')
